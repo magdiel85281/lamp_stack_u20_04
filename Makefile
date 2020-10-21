@@ -9,13 +9,13 @@ help:
 lamp_stack:
 	sudo apt-get update
 	sudo apt-get upgrade
-	sudo apt-get install apache2
-	sudo apt-get install libapache2-mod-wsgi python-dev
-	sudo apt-get install mysql-client mysql-server
+	sudo apt-get -y install apache2
+	sudo apt-get -y install libapache2-mod-wsgi python-dev
+	sudo apt-get -y install mysql-client mysql-server
 	sudo mysql_secure_installation
-	sudo apt install php libapache2-mod-php
+	sudo apt -y install php libapache2-mod-php
 	sudo systemctl restart apache2
-	sudo apt-get install python3-pip
+	sudo apt-get -y install python3-pip
 
 	@echo "***************************************"
 	@echo "FILE MODIFICATIONS"
