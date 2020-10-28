@@ -16,6 +16,7 @@ lamp_stack:
 	sudo apt -y install php libapache2-mod-php
 	sudo systemctl restart apache2
 	sudo apt-get -y install python3-pip
+	sudo pip3 install virtualenv
 
 	@echo "***************************************"
 	@echo "FILE MODIFICATIONS"
